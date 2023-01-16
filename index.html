@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="styles.css"></head>
+  <body>
+    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label><br>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required></input><br><br>
+      <label for="email" id="email-label">Email</label><br>
+      <input id="email" type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required></input><br><br>
+      <label for="number" id="number-label">Age(optional)</label><br>
+      <input id="number" type="number" name="number" placeholder="Age" min="18" max="80" required><br><br>
+      <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br><br>
+      <select id="dropdown">
+        <option value="none" selected disabled >Select current role</option>
+        <option value="Student"  >student</option>
+        <option value="Full time job">Full time job</option>
+        </select><br><br>
+<label for="name" id="radio-label">Would you recommend freeCodeCamp to a friend?</label><br><br>
+
+<input id="Definitely" type="radio" id="Definitely" name="group1" value="Definitely" >Definitely</input><br>
+<input id="May be" type="radio"  name="group1" value="may be" >May be</input><br>
+<input id="Not sure" type="radio" name="group1" value="Not sure" >Not sure</input>
+<br><br>
+<label for="name" id="Fav-feature">What is your favorite feature of freeCodeCamp?</label><br><br>
+<label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br><br>
+      <select id="dropdown">
+        <option value="none" selected disabled >Select an option</option>
+        <option value="challanges"  >Challanges</option>
+        <option value="community">Community</option>
+        </select><br><br>
+<label for="name" id="checkbox-label">What would you like to see improved? (Check all that apply)</label><br><br>
+<input id="Front-end Projects" type="checkbox" name="Front-end Projects" value="Front-end Projects" >Front-end Projects</input><br>
+<input id="Back-end Projects" type="checkbox" name="Back-end Projects" value="Back-end Projects" >Back-end Projects</input><br><br>
+
+<label for="name" id="comment-label">Any comments or suggestions?</label>
+<textarea id="textarea" type="text" name="textarea" placeholder="Enter your comment here"></textarea><br><br>
+<input id="submit" type="submit" name="submit"></input>
+      </form>
